@@ -1,0 +1,168 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
+<head>
+<link rel="Shortcut Icon" href="favicon.ico" >
+	<title>LG</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+	<bgsound sre=""loop="-1">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+<link rel="shortcut icon" href="/favicon.ico"/>
+</head>
+
+<body>
+          <!---这一行呢是音乐，当然是远程音乐是我服务器上面的你也可以改成其他的，怎么改我教你，从http到mp3那是音乐链接，你可以替换的剩下的是大小自动什么的了不需要改动了。，--> <audio autoplay="autopaly">
+                         <source src="http://qy.bbzx.wuxi.cn/myimages/2010-9/68433c78-1fe1-4c41-a069-44b6137539da.mp3" />
+			</audio>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code"><!---从下面一行开始就是需要改动的了，-->
+				<!---这是第一行代码，--><span class="comments"></span><br /><!---看到/和××了吗？恩这个你也可以改成你需要的文字，但仅限这两个哦-->
+				<span class="space"/><span class="comments"><H3>亲爱的晶晶：</H3> 还记得我们的第一次旅行, 我们的第一次牵手,那一次的约会,第一次的Kiss！</span><br />
+<span class="space"/><span class="comments">                                                                                                           
+
+
+
+
+
+
+</span><br />
+
+
+				<span class="space"/><span class="comments">     晶，我们相恋两年了。</span>             <br />
+
+<span class="space"/><span class="comments">     在火车上的第一次相见，军训后的联谊，王屋山的旅行，国庆节假期后冒着查寝迟到都要见我一面的你，我心动了！
+ <br/><span class="space"/><span class="comments"> 之后我们的爱情就开始了，一次次的见面，视频聊天，我确信我爱上了你！ </span>
+
+
+
+
+
+</span>
+
+
+
+<br />
+				<span class="comments">    可是我们的爱情增长了，互相的别扭矛盾也出现了，一次次的吵架，对骂。我知道你很迁就我，我们两人的脾气都很大，遇到事情总是不能冷静下来。大家的心里都有对方可是在嘴上都不肯服输。经历这么多，我也想了，心里都有对方才是最重要的。</span>          <br />   
+
+
+
+<span class="comments">     
+
+
+
+
+
+</span><br />               
+                                <span class="space"/><span class="comments"></我给之前发生的过错向你道歉。span><br />
+
+<span class="comments">     
+
+
+
+
+
+
+</span><br /> 
+				<span class="comments">晶晶，我爱你！<br />
+
+
+
+<span class="comments">    
+
+
+
+
+
+
+</span><br /> 
+
+				<span class="comments"></span><br />     我最大的愿望，就是能与你共享每一段时光。<br />     我多想与你执手迎风，山高水长。
+				<span class="comments">     你的笑温暖我的心，你的美灿烂一个春，你的快乐是我的心愿，你的幸福是我的春天，拥有你我春心荡漾，离开你我心从春出。</span><br />
+
+                                 
+
+                                 <span class="space"/><span class="comments">    你是花，我是草，我们相扶直到老；你是山，我是水，我们一生永相随；你是天，我是地，一生相伴不分离。</span><br />
+				
+
+
+
+
+
+                                  <span class="space"/>我可以确定，从现在未来，你是我唯一的爱，我也知道，在这多变的世界，你将是不变的爱。在未来，我希望宝贝能够快快乐乐的，我也会让宝贝快乐快乐的，永远幸福！我希望我们之间的爱，能像小溪中的流水一样，清澈、平静的、欢快而无忧的流向远方。
+<span class="comments"></span><br />
+
+
+
+
+<span class="comments">     
+
+
+
+
+
+
+
+</span><br /> 
+
+你的最爱-----李心意
+<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+					   <H5>李心意永远爱郭晶晶：<晶,我会永远爱你,疼你,让你开心>
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						I'll be there for you<br/>
+						<div class="signature">–lxy</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2018, 9, 28);  
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
